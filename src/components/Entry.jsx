@@ -1,16 +1,12 @@
 import React from "react";
+import Emoji from "./Emoji";
 
 function Entry() {
     return (
         <>
             <dl className="dictionary">
                 <div className="term">
-                    <dt>
-                    <span className="emoji" role="img" aria-label="Tense Biceps">
-                      💪
-                    </span>
-                        <span>Tense Biceps</span>
-                    </dt>
+                    <Emoji />
                     <dd>
                         “You can do that!” or “I feel strong!” Arm with tense biceps. Also
                         used in connection with doing sports, e.g. at the gym.
