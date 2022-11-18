@@ -27,6 +27,14 @@ function App() {
       </h1>
         <dl className="dictionary">
             {emojipedia.map(createEntry)}
+            {emojipedia.map((emojiitem) => (
+                <Entry
+                    key={emojiitem.id}
+                    emoji={emojiitem.emoji}
+                    name={emojiitem.name}
+                    meaning={emojiitem.meaning}
+                />
+            ))}
         </dl>
     </div>
   );
